@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu restaurant</title>
+</head>
+<body>
+    <H1>Bottega Restaurant</H1>
+    <h1>Spanish Meats</h1>
+    <div class="platoPrincipal">
+        <h2>::Elije Un Plato Principal::</h2>
+        <form name="platoPrincipal">
+            <input type="radio" id ="1mainMenu1" name="PrimerPlato" value="cachopo">
+            <label for="1mainMenu1">Cachopo</label>
+            <input type="radio" id ="1mainMenu2" name="PrimerPlato" value="juanchoBurger">
+            <label for="1mainMenu2">Juancho's Hamburger</label>
+            <input type="radio" id ="1mainMenu3" name="PrimerPlato" value="asturianSteak">
+            <label for="1mainMenu3">Asturian steak</label>
+        </form>
+        <h3>::Elije Preparacion(Si no se escoge nada se preparara el plato a desicion del chef Jordan)::</h3>
+        <form name="preparationMode">
+            <input type="radio" id ="preparation1" name="preparation" value="doneToPerfection">
+            <label for="preparation1">En su punto</label>
+            <input type="radio" id ="preparation2" name="preparation" value="undercooked">
+            <label for="preparation2">Poco hecho</label>
+            <input type="radio" id ="preparation3" name="preparation" value="defaultcooked">
+            <label for="preparation3">Termino Medio</label>
+        </form>
+
+    </div><br>
+    <div class="segundoPlato"> 
+        <h2>::Elije dos Entrantes::</h2>
+        <h3>Primer entrante: </h3>
+        <form name="primerSideMenu">
+            <input type="radio" id ="1sideMenu1" name="PrimerEntrante" value=${gazpacho}>
+            <label for="1sideMenu1">Gazpacho</label>
+            <input type="radio" id ="1sideMenu2" name="PrimerEntrante" value="henSoup">
+            <label for="1sideMenu2">Hen's soup</label>
+            <input type="radio" id ="1sideMenu3" name="PrimerEntrante" value="sailorPotatoes">
+            <label for="1sideMenu3">Sailor potatoes</label>
+            <input type="radio" id ="1sideMenu4" name="PrimerEntrante" value="salad">
+            <label for="1sideMenu4">Salad</label>
+            <input type="radio" id ="1sideMenu5" name="PrimerEntrante" value="vegetablesCream">
+            <label for="1sideMenu5">Vegetables cream</label>
+            <input type="radio" id ="1sideMenu6" name="PrimerEntrante" value="cordovanSalmorejo">
+            <label for="1sideMenu6">Cordovan salmorejo</label>
+        </form>
+
+        <h3>Segundo entrante: </h3>
+        <form name="segundoSideMenu">
+            <input type="radio" id ="2sideMenu1" name="SegundoEntrante" value="gazpacho">
+            <label for="2sideMenu1">Gazpacho</label>
+            <input type="radio" id ="2sideMenu2" name="SegundoEntrante" value="henSoup">
+            <label for="2sideMenu2">Hen's soup</label>
+            <input type="radio" id ="2sideMenu3" name="SegundoEntrante" value="sailorPotatoes"> 
+            <label for="2sideMenu3">Sailor potatoes</label>
+            <input type="radio" id ="2sideMenu4" name="SegundoEntrante" value="salad">
+            <label for="2sideMenu4">Salad</label>
+            <input type="radio" id ="2sideMenu5" name="SegundoEntrante" value="vegetablesCream">
+            <label for="2sideMenu5">Vegetables cream</label>
+            <input type="radio" id ="2sideMenu6" name="SegundoEntrante" value="cordovanSalmorejo">
+            <label for="2sideMenu6">Cordovan salmorejo</label>
+        </form>
+    </div><br>
+
+    <h1>Tambien disponemos de Menus Preparados</h1>
+    <div class="menuPreparado">
+        <h2>::Elije Un Menu::</h2>
+        <form name="menuPreparado">
+            <input type="radio" id ="breakfast" name="menu" value="cachopo">
+            <label for="breakfast">Breakfast</label>
+            <input type="radio" id ="lunch" name="menu" value="juanchoBurger">
+            <label for="lunch">Lunch</label>
+            <input type="radio" id ="dinner" name="menu" value="asturianSteak">
+            <label for="dinner">Dinner</label>
+        </form>
+    </div><br>
+    <button id ='pedido' onclick="makeBill()">Realizar Pedido</button><br><br><br>
+</body>
+<script type="text/javascript" src="bootstrap.js"></script>
+</html>
