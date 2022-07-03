@@ -163,7 +163,7 @@ function makeBill(){
         Madrid, Spain<br>
         davidcastagnetoa@gmail.com<br>
         *********************************************<br>
-        Date: <br>
+        Date: ${Date()}<br>
         Bill: ${randomBillNumber(10000, 99999)}<br>
         *********************************************<br>
         Plato Principal : ${menuOfDay.plate}<br>
